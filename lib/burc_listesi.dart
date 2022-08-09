@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_horoscope_guide/burc_item.dart';
 import 'package:flutter_horoscope_guide/data/strings.dart';
 import 'package:flutter_horoscope_guide/model/burc.dart';
 import '';
@@ -14,7 +15,7 @@ class BurcListesi extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Burclar Listesi")),
       body: Center(child: ListView.builder(itemBuilder: (context, index) {
-        return Container();
+        return BurcItem(listelenenBurc: tumBurclar[index]);
       })),
     );
   }
