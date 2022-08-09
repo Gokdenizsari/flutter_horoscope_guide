@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_horoscope_guide/burc_listesi.dart';
+
+import 'burc_listesi.dart';
 
 void main() {
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -12,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.teal),
+      theme: ThemeData(
+        primarySwatch: Colors.orange
+      ),
       home: BurcListesi(),
     );
   }
